@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @coordinate.number %>
+</p>
+
+<p>
+  <strong>Coord:</strong>
+  <%= @coordinate.coord %>
+</p>
+
+<%= link_to 'Edit', edit_coordinate_path(@coordinate) %> |
+<%= link_to 'Back', coordinates_path %>

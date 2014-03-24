@@ -1,0 +1,31 @@
+<h1>Listing tries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Begining</th>
+      <th>End</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tries.each do |try| %>
+      <tr>
+        <td><%= try.number %></td>
+        <td><%= try.begining %></td>
+        <td><%= try.end %></td>
+        <td><%= link_to 'Show', try %></td>
+        <td><%= link_to 'Edit', edit_try_path(try) %></td>
+        <td><%= link_to 'Destroy', try, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Try', new_try_path %>

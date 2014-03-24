@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @robot.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @robot.name %>
+</p>
+
+<%= link_to 'Edit', edit_robot_path(@robot) %> |
+<%= link_to 'Back', robots_path %>
